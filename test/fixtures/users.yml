@@ -6,6 +6,6 @@
 #
 one:
   email: test@test.com
-
+  team: one
 # two: {}
 # column: value

@@ -18,7 +18,6 @@ class EventsTest < ApplicationSystemTestCase
     fill_in "Date", with: @event.date
     fill_in "Location", with: @event.location
     fill_in "Name", with: @event.name
-    fill_in "Team", with: @event.team_id
     click_on "Create Event"
 
     assert_text "Event was successfully created"
@@ -32,7 +31,6 @@ class EventsTest < ApplicationSystemTestCase
     fill_in "Date", with: @event.date
     fill_in "Location", with: @event.location
     fill_in "Name", with: @event.name
-    fill_in "Team", with: @event.team_id
     click_on "Update Event"
 
     assert_text "Event was successfully updated"
