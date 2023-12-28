@@ -44,9 +44,9 @@ jobs:
 
 ActionView::Template::Error: The asset "tailwind.css" is not present in the asset pipeline.
 
-gem install bundler
-bundle update --bundler
-bundle lock --add-platform x86_64-linux
+add this to CI
 
-add to config/application.rb
-config.assets.css_compressor = nil
+```yml
+- name: Precompile assets
+  run: bundle exec rake assets:precompile
+```
