@@ -1,5 +1,10 @@
 # 10 hour MVP
 
+Update scaffolded views -> current user should only be able to see their own team
+Github Repo
+add events model and views
+disable team_id field in events. this should always be locked to the current_users team
+
 ## key Features
 
 1. A schedule tracker -
@@ -24,7 +29,6 @@ GitHub actions CI/CD
 
 ## Models
 
-Schedule - collections of events for a team in a year
 Event - a line item on the schedule
 Event_item - a piece of an event
 
@@ -35,11 +39,6 @@ Attendance Secretary - name, email, grades_responsible_for (9,10,11,12)
 Departure_offset - time_amount, belongs_to team
 Offset_email_send_date
 Athlete - grade
-
-schedules
-
-- Year
-- has_many events
 
 events
 
