@@ -2,6 +2,7 @@ require "application_system_test_case"
 
 class TeamsTest < ApplicationSystemTestCase
   setup do
+    sign_in users(:one)
     @team = teams(:one)
   end
 

@@ -1,0 +1,7 @@
+<h1> HOME </h1>
+
+<% if current_user.team.nil? %>
+    <section>
+        <%= link_to 'Add a New Team', new_team_path %>
+    </section>
+<% end %>

@@ -2,6 +2,7 @@ require "test_helper"
 
 class TeamsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    sign_in users(:one)
     @team = teams(:one)
   end
 
