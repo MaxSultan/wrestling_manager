@@ -9,6 +9,7 @@ Update scaffolded views -> current user should only be able to see their own tea
 [x] add event_items to event show page
 [] create sharable team season events view
 [] create a TeamUser through table with a role attribute
+[] create a JoinTeamRequest model
 [] Lock down views and controller actions with pundit/can-can
 [] decide how to link main views together
 [] eliminate unnecessary views (event_item show, event_items index)

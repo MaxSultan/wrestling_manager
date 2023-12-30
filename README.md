@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version
+  3.0.3
 
-Things you may want to cover:
+- System dependencies
+  Ruby
+  Rails
+  Postgres
 
-* Ruby version
+- Configuration
 
-* System dependencies
+- Database creation
+  `rails db:setup` OR `bin/setup`
 
-* Configuration
+- Database initialization
+  `rails db:setup` OR `bin/setup`
 
-* Database creation
+- How to run the test suite
+  `rails test` runs integration tests
+  `rails test:system` runs system (E2E) tests
 
-* Database initialization
+- Services (job queues, cache servers, search engines, etc.)
 
-* How to run the test suite
+- Deployment instructions
+  On merge to the github Repo a deploy is triggered.
+  You can manually trigger a deploy buy running `fly login` and `fly deploy` and then visit the app with `fly apps open`.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The Deployed app can be viewed at https://wrestling-manager.fly.dev/
