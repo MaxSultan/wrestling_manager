@@ -1,0 +1,17 @@
+<div id="<%= dom_id event_item %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= event_item.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Time:</strong>
+    <%= event_item.time %>
+  </p>
+
+  <div class="inline-block ml-2">
+      <%= button_to "Delete this event item", event_event_item_path(@event, event_item), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    </div>
+  <%= link_to "Edit this event item", edit_event_event_item_path(@event, event_item), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <hr class="mt-6">
+</div>

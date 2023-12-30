@@ -1,9 +1,19 @@
 # 10 hour MVP
 
+8 hours left
+
 Update scaffolded views -> current user should only be able to see their own team
-Github Repo
-add events model and views
-disable team_id field in events. this should always be locked to the current_users team
+[x] Github Repo
+[x] add events model and views
+[x] disable team_id field in events. this should always be locked to the current_users team
+[x] add event_items to event show page
+[] create sharable team season events view
+[] create a TeamUser through table with a role attribute
+[] Lock down views and controller actions with pundit/can-can
+[] decide how to link main views together
+[] eliminate unnecessary views (event_item show, event_items index)
+[] set time in event items to use date of parent event as the date
+[] update the date of all child event items when parent event date is updated
 
 ## key Features
 
@@ -26,6 +36,7 @@ disable team_id field in events. this should always be locked to the current_use
 TDD
 Deployed on fly.io
 GitHub actions CI/CD
+Hotwire/Turbo for schedule and roster?
 
 ## Models
 
@@ -94,3 +105,7 @@ View scheduled emails
 
 v2
 Add ability to join existing team
+
+## Open Questions
+
+How do we plan to handle multi day events on the schedule?

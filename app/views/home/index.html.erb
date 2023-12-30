@@ -1,7 +1,12 @@
-<h1> HOME </h1>
-
-<% if current_user.team.nil? %>
-    <section>
-        <%= link_to 'Add a New Team', new_team_path %>
-    </section>
-<% end %>
+<div class="mx-auto md:w-2/3 w-full flex flex-col">
+    <h1 class="font-bold text-4xl">Home</h1>
+    <% if current_user.team.nil? %>
+        <section>
+            <%= link_to 'Add a New Team', new_team_path %>
+        </section>
+    <% else %>
+        <ul class="list-none w-full">
+            <%= render @events %>
+        </ul>
+    <% end %>
+</div>
