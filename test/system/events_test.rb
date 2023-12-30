@@ -26,7 +26,7 @@ class EventsTest < ApplicationSystemTestCase
 
   test "should update Event" do
     visit event_url(@event)
-    click_on "Edit this event", match: :first
+    click_on "Edit this event", match: :prefer_exact
 
     fill_in "Date", with: @event.date
     fill_in "Location", with: @event.location
